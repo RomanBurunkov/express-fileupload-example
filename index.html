@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <style>
+      div { margin: 10px; }
+    </style>
+  </head>
+  <body>
+    <form id='uploadForm' method='post' encType="multipart/form-data">
+      <div><input id="inpFile" type="file" name="sampleFile" /></div>
+      <div><input type='submit' value='Upload!' /></div>
+    </form>
+    <script>
+      const form = document.querySelector('#uploadForm');
+      const inpFile = document.querySelector('#inpFile');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const body = new FormData();
+        for (file of inpFile.files) {
+          body.append('inpFile', file);
+        }
+        
+        fetch('/upload', { method: 'POST', body })
+          .then(res => res.text())
+          .then(alert)
+          .catch(console.error);
+      });
+    </script>
+  </body>
+</html>

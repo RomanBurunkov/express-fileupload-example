@@ -1,0 +1,28 @@
+{
+  "name": "express-fileupload-example",
+  "version": "0.0.1",
+  "description": "express-fileupload example project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomanBurunkov/express-fileupload-example.git"
+  },
+  "keywords": [
+    "express",
+    "upload",
+    "multipart"
+  ],
+  "author": "Roman Burunkov <romon2002@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RomanBurunkov/express-fileupload-example/issues"
+  },
+  "homepage": "https://github.com/RomanBurunkov/express-fileupload-example#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3"
+  }
+}
