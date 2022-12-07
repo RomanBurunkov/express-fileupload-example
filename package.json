@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/RomanBurunkov/express-fileupload-example#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-fileupload": "^1.1.7-alpha.3"
   }
 }
