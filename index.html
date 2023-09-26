@@ -19,7 +19,7 @@
         for (file of inpFile.files) {
           body.append('inpFile', file);
         }
-        
+
         fetch('/upload', { method: 'POST', body })
           .then(res => res.text())
           .then(alert)
