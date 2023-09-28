@@ -103,5 +103,6 @@ dist
 # TernJS port file
 .tern-port
 
-# Ignore files in the upload directory.
+# Ignore files in the upload and temp directories.
 uploads/
+temp/
